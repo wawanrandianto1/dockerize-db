@@ -1,6 +1,6 @@
 version: '1'
 
-name: 'databases'
+name: 'mysqldb'
 services:
   mysql:
     image: 'mysql:latest'
