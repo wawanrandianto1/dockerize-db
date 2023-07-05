@@ -1,0 +1,28 @@
+
+version: '1'
+
+name: 'databases'
+services:
+  postgres:
+    container_name: 'postgres'
+    image: 'postgres:14'
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - '5432:5432'
+    volumes:
+      - '~/Documents/Databases/postgresql:/var/lib/postgresql/data'
+    networks:
+      - 'pgdb-net'
+    # restart: always
+    
+  adminer:
+    image: 'adminer:latest'
+    ports:
+      - '8085:8080'
+    networks:
+      - 'pgdb-net'
+
+networks:
+  pgdb-net:
