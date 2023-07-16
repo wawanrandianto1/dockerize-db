@@ -11,7 +11,7 @@ services:
     networks:
       - 'mysqldb-net'
     volumes:
-      - '~/Documents/Databases/mysql:/var/lib/mysql'
+      - '${MYSQL_FOLDER}:/var/lib/mysql'
   
   adminer:
     image: 'adminer:latest'

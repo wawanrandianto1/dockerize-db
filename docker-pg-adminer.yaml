@@ -12,7 +12,7 @@ services:
     ports:
       - '5432:5432'
     volumes:
-      - '~/Documents/Databases/postgresql:/var/lib/postgresql/data'
+      - '${POSTGRES_FOLDER}:/var/lib/postgresql/data'
     networks:
       - 'pgdb-net'
     # restart: always

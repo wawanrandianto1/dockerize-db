@@ -10,7 +10,7 @@ services:
     ports:
       - '3306:3306'
     volumes:
-      - '~/Document/Databases/mysql:/var/lib/mysql'
+      - '${MYSQL_FOLDER}:/var/lib/mysql'
   
   phpmyadmin:
     image: phpmyadmin/phpmyadmin

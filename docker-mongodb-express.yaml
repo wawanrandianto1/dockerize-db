@@ -10,7 +10,7 @@ services:
     networks:
         - 'mongo-compose-net'
     volumes:
-      - '~/Documents/Databases/mongodb:/data/db'
+      - '${MONGO_FOLDER}:/data/db'
 
   mongo-express:
     image: 'mongo-express:latest'
