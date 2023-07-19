@@ -42,3 +42,15 @@ portainer-up:
 
 portainer-down:
 	${call gendown,dockerportainer.yaml}
+
+excal-up:
+	${call genup,dockerportainer.yaml}
+
+excal-down:
+	${call gendown,dockerportainer.yaml}
+
+# pull-excalidraw:
+# 	docker pull excalidraw/excalidraw:latest
+#
+# run-excalidraw: pull-excalidraw
+# 	docker run -d -p 8082:80 --name myexcal excalidraw/excalidraw:latest
