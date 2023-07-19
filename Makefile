@@ -44,10 +44,10 @@ portainer-down:
 	${call gendown,dockerportainer.yaml}
 
 excal-up:
-	${call genup,dockerportainer.yaml}
+	${call genup,docker-excalidraw.yaml}
 
 excal-down:
-	${call gendown,dockerportainer.yaml}
+	${call gendown,docker-excalidraw.yaml}
 
 # pull-excalidraw:
 # 	docker pull excalidraw/excalidraw:latest
